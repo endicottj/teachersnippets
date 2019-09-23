@@ -1,0 +1,121 @@
+h1, h3, p {
+    color: #1c325f;
+}
+
+body {
+    background-color: #eadcd2;
+}
+
+input {
+    font-family: Arial;
+    margin:5px 0px;
+    padding: 5px;
+}
+
+ul {
+    list-style: none;
+}
+
+.logo {
+    width: 150px;
+    
+    /* For a text version of the logo
+    background-color: #1c325f;
+    color: #cfa280;
+    text-align: center;
+    font-family: Arial;
+    font-weight: bold;
+    */
+}
+
+.header {
+    background-color: #cfa280;
+}
+
+.content {
+    padding: 15px 20px;
+    line-height: 15px;
+    font-family: Arial;
+}
+
+.footer {
+    color: #1c325f;
+    background-color: #cfa280;
+    padding: 15px 20px;
+    line-height: 15px;
+    font-family: Arial;
+}
+
+/* This is to be used for a text version of the teacher snippets icon
+
+#teacher {
+    font-size: 22px;
+}
+
+#snippets {
+    font-size: 21px;
+}
+
+#com {
+    font-size: 41px;
+}
+
+*/
+
+#navbar {
+    float: left;
+    font-family: Arial;
+}
+
+#navbar ul {
+    margin: 0;
+    padding: 0;
+}
+
+#navbar li {
+    background: #f0c579;
+    float: left;
+    margin: 0;
+    padding: 5px;
+}
+
+#navbar a {
+    color: #666666;
+    font-weight: bold;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+#navbar a:hover {
+    color: #333333;
+}
+
+#navbar #currentpage a {
+    background: #eadcd2;
+    color: #1c325f;
+}
+
+#homecontent {
+    text-align:center;
+    margin: 100px;
+}
+
+#user-login {
+    background-clip: padding-box;
+    background-color: #eadcd2;
+    border: 10px solid rgba(28, 50, 95, 1);
+    height: 400px;
+    padding: 30px 30px 10px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+#signincreate {
+    margin: 100px 0 0 0;
+}
+
+#groupnumbers {
+    text-align: center;
+    margin: 25px;
+    font-family: 'Courier New';
+}
