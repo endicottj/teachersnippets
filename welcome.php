@@ -1,6 +1,5 @@
-<?php
-$thisPage="Create Seating Chart";
-
+<?php 
+$thisPage="Home"; 
 require_once("form-helper.php");
 require_once("session-helper.php");
 session_start();
@@ -17,10 +16,9 @@ $user = $_SESSION['username'];
 require_once("header.php");
 ?>
 
-
-<div id="maincontent">
-<p><h3>Future home of seating chart creator (using JavaScript).  <a href="instructions.php">(Instructions)</a></h3></p>
-
+<div id = "homecontent">
+<p><h1>Welcome, <?= $user ?>!</h1></p>
+<p><h3>You have signed in, please feel free to begin.</h3></p>
 </div>
 
 <?php

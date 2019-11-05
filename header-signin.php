@@ -1,11 +1,3 @@
-<?php
-
-if(session_status() === PHP_SESSION_NONE) {
-	session_start();
-}
-
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,13 +10,14 @@ if(session_status() === PHP_SESSION_NONE) {
 <!--This is a text version of the teacher snippets icon:
 <a href="index.php"><div class="icon"><p id="teacher">TEACHER</p><p id="snippets">SNIPPETS</p><p id="com">.COM</p></div></a>
 -->
-<a href="welcome.php"><img class="logo" src="teachersnippetslogo.jpg" alt="Teacher Snippets Logo"></a>
+<a href="index.php"><img class="logo" src="teachersnippetslogo.jpg" alt="Teacher Snippets Logo"></a>
 </div>
-<div class="navbar" id = "rightnavbar">
+<div class="navbar" id="rightnavbar">
 	<ul>
-		<li<?php if ($thisPage=="Create Seating Chart") 
-			echo " id=\"currentpage\""; ?>><a href="createseatingchart.php">Create Seating Chart</a></li>
-		<li><a href="signout.php">Sign Out</a></li>
+		<li<?php if ($thisPage=="Sign In") 
+			echo " id=\"currentpage\""; ?>><a href="signin.php">Sign In</a></li>
+		<li<?php if ($thisPage=="Create Account") 
+			echo " id=\"currentpage\""; ?>><a href="createaccount.php">Create Account</a></li>
 	</ul>
 </div>
 <div class="content">

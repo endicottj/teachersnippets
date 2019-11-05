@@ -1,5 +1,6 @@
 h1, h3, p {
     color: #1c325f;
+    line-height: 120%;
 }
 
 body {
@@ -62,35 +63,42 @@ ul {
 
 */
 
-#navbar {
-    float: left;
+.navbar {
     font-family: Arial;
 }
 
-#navbar ul {
+.navbar ul {
     margin: 0;
     padding: 0;
 }
 
-#navbar li {
+#rightnavbar {
+    float: right;
+}
+
+#leftnavbar {
+    float: left;
+}
+
+.navbar li {
     background: #f0c579;
     float: left;
     margin: 0;
     padding: 5px;
 }
 
-#navbar a {
+.navbar a {
     color: #666666;
     font-weight: bold;
     padding: 5px 10px;
     text-decoration: none;
 }
 
-#navbar a:hover {
+.navbar a:hover {
     color: #333333;
 }
 
-#navbar #currentpage a {
+.navbar #currentpage a {
     background: #eadcd2;
     color: #1c325f;
 }
@@ -104,14 +112,17 @@ ul {
     background-clip: padding-box;
     background-color: #eadcd2;
     border: 10px solid rgba(28, 50, 95, 1);
-    height: 400px;
     padding: 30px 30px 10px;
-    width: 300px;
-    margin: 0 auto;
+    width: 400px;
+    margin: 40px auto;
 }
 
 #signincreate {
     margin: 100px 0 0 0;
+}
+
+#maincontent {
+    padding: 30px 30px 10px;
 }
 
 #groupnumbers {
