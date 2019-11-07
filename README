@@ -1,0 +1,37 @@
+# Teacher Snippets
+
+Teacher Snippets is a website for creating seating charts, and eventually other small tools
+like a script editor for musical theater.
+
+## Files
+
+Navigation:
+
+index.php // First page user will see
+signin.php // Allows existing users with an account to sign in
+forgotpassword.php // Future page, will possibly email users with their password?
+createaccount.php // Allows new users to create an account
+signout.php // Allows users to sign out
+welcome.php // First page users see when signing in
+mysavedwork.php // Was going to be a page where users could save their work, probably unnecessary
+createseatingchart.php // Future page that will allow users to create a seating chart using MySQL sorting
+instructions.php // Page that contains instructions about creating a seating chart.  May be unnecessary.
+condensescript.php // Page that allows users to edit a script for musical theater.  Probably will not be part of the project for this class.
+
+header-signin.php // Contains the header for pages before a user has signed in
+header.php // Contains the header for pages after a user has signed in
+footer.php // Contains the footer for all pages
+
+Behind the scenes:
+
+config.php // Helps set up Heroku.  Unnecessary but may be used again if I don't want to hard code my Heroku info.
+Dao.php // Creates PDO connection, contains all prepared statements.
+endicott.sql // Contains the code I used to create the user table, as well as what I will use for future tables.
+form-helper.sql // Contains functions used by several pages for submitting forms
+mystyle.css // Contains all style info.
+registration-handler.php // Manages POST/REDIRECT/GET sequence when a user is created.
+session-helper.php // Contains functions regarding sessions.
+signin-handler.php // Manages POST/REDIRECT/GET sequence when an existing user signs in.
+testdb.php // A temporary page used to test connection and other aspects of databases.
+favicon.jpg // An image file for the favicon
+teachersnippetslogo.jpg // An image file for the logo
