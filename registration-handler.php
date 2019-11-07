@@ -1,10 +1,11 @@
 <?php
 session_start();	// begins a new session for the current client
 
+
 require_once("form-helper.php");
 require_once("session-helper.php");
 require_once("Dao.php");
-
+			
 // Extract all variables from $_POST superglobal array.
 $fullName = trim($_POST['fullName']);
 $email = trim($_POST['email']);
@@ -17,6 +18,7 @@ $presets = ['fullName' => htmlspecialchars($fullName),
 			'email' => htmlspecialchars($email),
 			'password' => htmlspecialchars($password),
 			'password_match' => htmlspecialchars($password_match)];
+
 
 // VALDATE FIELD FROM SERVER SIDE.  SET ERROR IF APPLICABLE.
 // Full Name

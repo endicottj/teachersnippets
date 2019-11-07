@@ -8,18 +8,24 @@ class Dao
 	 */
 	private function getConnection()
 	{
-		$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+		//$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 
-		$host = $url["host"];
-		$db   = substr($url["path"], 1);
-		$user = $url["user"];
-		$pass = $url["pass"];
+		$host = "us-cdbr-iron-east-05.cleardb.net";
+		$db   = "heroku_fc4bc88759cfb52";
+		$user = "bb752530790438";
+		$pass = "c0b2b74a";
 
-		$conn = new PDO("mysql:host=$host;dbname=$db;", $user, $pass);
+		try {
+			$conn = new PDO("mysql:host=$host;dbname=$db;", $user, $pass);
+			$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+		} catch (Exception $e) {
+			echo "could not connect";
+			exit;
+		}
 
 		// Turn on exceptions for debugging. Comment this out for
 		// production or make sure to use try-catch statements.
-		$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 		return $conn; 
 	}
@@ -56,6 +62,7 @@ class Dao
 	// Adds user to database
 	public function addUser($email, $password, $name)
 	{
+	    
 		$conn = $this->getConnection();
 		$query = "INSERT INTO user (email, password, name) 
 					VALUES (:email, :password, :name)";
